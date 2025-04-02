@@ -13,6 +13,7 @@ import SEO from "@/components/SEO"
 // Import slick-carousel styles
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import SlideingSocialmediaPost from "@/components/SlideingSocialmediaPost"
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -126,7 +127,7 @@ export default function Home() {
         ogImage="https://savoria-restaurant.com/og-image-home.jpg"
       />
       <Navbar />
-
+      
       {/* Hero Section */}
       <section className="relative h-screen flex items-center">
         <div className="absolute inset-0 z-0">
@@ -155,7 +156,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-white border-white hover:bg-white hover:text-orange-900"
+                className="text-black border-white hover:bg-white hover:text-orange-900"
               >
                 <Link href="/contact">Make a Reservation</Link>
               </Button>
@@ -271,104 +272,108 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-orange-100">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl font-bold mb-6 text-orange-900">Our Story</h2>
-              <p className="text-gray-700 mb-4">
-                Founded in 2010 by renowned chef Maria Rodriguez, Savoria has become a culinary landmark in the heart of
-                the city. Our journey from a small family-owned restaurant to a Michelin-starred establishment is a
-                testament to our unwavering commitment to culinary excellence and exceptional dining experiences.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Maria's passion for cooking was ignited in her grandmother's kitchen, where she learned the art of
-                blending traditional recipes with innovative techniques. This fusion of old and new became the
-                cornerstone of Savoria's philosophy.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Over the years, we've cultivated relationships with local farmers and artisans, ensuring that every
-                ingredient that enters our kitchen is of the highest quality. Our seasonal menus reflect the bounty of
-                our region and our dedication to sustainability.
-              </p>
-              <p className="text-gray-700 mb-6">
-                Today, Savoria is more than just a restaurant; it's a destination for food lovers seeking unforgettable
-                culinary experiences. From our innovative tasting menus to our warm, inviting atmosphere, we strive to
-                create moments of joy and discovery with every visit.
-              </p>
-              <Button className="bg-orange-500 text-white hover:bg-orange-600">
-                <Link href="/about">Learn More</Link>
-              </Button>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Chef preparing a dish"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-            </motion.div>
-          </div>
-        </div>
+      <section className="py-20 bg-orange-100 overflow-hidden">
+  <div className="container mx-auto px-4 max-w-screen-xl">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-4xl font-bold mb-6 text-orange-900">Our Story</h2>
+        <p className="text-gray-700 mb-4">
+          Founded in 2010 by renowned chef Maria Rodriguez, Savoria has become a culinary landmark in the heart of
+          the city. Our journey from a small family-owned restaurant to a Michelin-starred establishment is a
+          testament to our unwavering commitment to culinary excellence and exceptional dining experiences.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Maria's passion for cooking was ignited in her grandmother's kitchen, where she learned the art of
+          blending traditional recipes with innovative techniques. This fusion of old and new became the
+          cornerstone of Savoria's philosophy.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Over the years, we've cultivated relationships with local farmers and artisans, ensuring that every
+          ingredient that enters our kitchen is of the highest quality. Our seasonal menus reflect the bounty of
+          our region and our dedication to sustainability.
+        </p>
+        <p className="text-gray-700 mb-6">
+          Today, Savoria is more than just a restaurant; it's a destination for food lovers seeking unforgettable
+          culinary experiences. From our innovative tasting menus to our warm, inviting atmosphere, we strive to
+          create moments of joy and discovery with every visit.
+        </p>
+        <Button className="bg-orange-500 text-white hover:bg-orange-600">
+          <Link href="/about">Learn More</Link>
+        </Button>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <Image
+          src="/placeholder.svg?height=400&width=600"
+          alt="Chef preparing a dish"
+          width={600}
+          height={400}
+          className="rounded-lg shadow-lg w-full max-w-full"
+        />
+      </motion.div>
+    </div>
+  </div>
       </section>
 
+
       {/* Testimonials Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto">
-          <motion.h2
-            className="text-4xl font-bold text-center mb-12 text-orange-900"
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            What Our Guests Say
-          </motion.h2>
-          {mounted && (
-            <Slider {...sliderSettings}>
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="px-4">
-                  <motion.div
-                    className="bg-orange-50 p-6 rounded-lg shadow-md h-full"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                  >
-                    <div className="flex items-center mb-4">
-                      <Image
-                        src="/placeholder.svg?height=50&width=50"
-                        alt={testimonial.name}
-                        width={50}
-                        height={50}
-                        className="rounded-full mr-4"
-                      />
-                      <div>
-                        <h3 className="font-bold text-orange-900">{testimonial.name}</h3>
-                        <div className="flex items-center">
-                          <Star className="w-4 h-4 fill-orange-400 text-orange-400 mr-1" />
-                          <span className="text-orange-700 font-semibold">{testimonial.rating}</span>
-                        </div>
-                      </div>
+      <section className="py-20 bg-white overflow-hidden">
+  <div className="container mx-auto px-4 max-w-screen-xl">
+    <motion.h2
+      className="text-4xl font-bold text-center mb-12 text-orange-900"
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+    >
+      What Our Guests Say
+    </motion.h2>
+    {mounted && (
+      <div className="w-full">
+        <Slider {...sliderSettings}>
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="px-4">
+              <motion.div
+                className="bg-orange-50 p-6 rounded-lg shadow-md h-full"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <div className="flex items-center mb-4">
+                  <Image
+                    src="/placeholder.svg?height=50&width=50"
+                    alt={testimonial.name}
+                    width={50}
+                    height={50}
+                    className="rounded-full mr-4"
+                  />
+                  <div>
+                    <h3 className="font-bold text-orange-900">{testimonial.name}</h3>
+                    <div className="flex items-center">
+                      <Star className="w-4 h-4 fill-orange-400 text-orange-400 mr-1" />
+                      <span className="text-orange-700 font-semibold">{testimonial.rating}</span>
                     </div>
-                    <p className="text-gray-700 italic">"{testimonial.comment}"</p>
-                  </motion.div>
+                  </div>
                 </div>
-              ))}
-            </Slider>
-          )}
-        </div>
+                <p className="text-gray-700 italic">"{testimonial.comment}"</p>
+              </motion.div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    )}
+  </div>
       </section>
+
 
       <motion.div variants={fadeIn} className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-center text-orange-800">Visit Us</h2>

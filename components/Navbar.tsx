@@ -3,7 +3,8 @@
 import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Facebook } from "lucide-react" // Import icons from lucide-react
+import { FaInstagram, FaTiktok } from "react-icons/fa" // Import Instagram and TikTok from react-icons
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -36,6 +37,30 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
+            {/* Social media icons */}
+            <div className="flex items-center space-x-4">
+              <Link
+                href="https://facebook.com"
+                target="_blank"
+                className="text-gray-700 hover:bg-orange-100 hover:text-orange-900 p-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+              >
+                <Facebook className="text-xl" />
+              </Link>
+              <Link
+                href="https://instagram.com"
+                target="_blank"
+                className="text-gray-700 hover:bg-orange-100 hover:text-orange-900 p-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+              >
+                <FaInstagram className="text-xl" />
+              </Link>
+              <Link
+                href="https://tiktok.com"
+                target="_blank"
+                className="text-gray-700 hover:bg-orange-100 hover:text-orange-900 p-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+              >
+                <FaTiktok className="text-xl" />
+              </Link>
+            </div>
           </div>
           <div className="flex items-center md:hidden">
             <button
@@ -68,10 +93,36 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
+            {/* Social media icons in mobile view */}
+            <div className="flex items-center space-x-4">
+              <Link
+                href="https://facebook.com"
+                target="_blank"
+                className="text-gray-700 hover:bg-orange-100 hover:text-orange-900 p-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                onClick={() => setIsOpen(false)}
+              >
+                <Facebook className="text-xl" />
+              </Link>
+              <Link
+                href="https://instagram.com"
+                target="_blank"
+                className="text-gray-700 hover:bg-orange-100 hover:text-orange-900 p-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                onClick={() => setIsOpen(false)}
+              >
+                <FaInstagram className="text-xl" />
+              </Link>
+              <Link
+                href="https://tiktok.com"
+                target="_blank"
+                className="text-gray-700 hover:bg-orange-100 hover:text-orange-900 p-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                onClick={() => setIsOpen(false)}
+              >
+                <FaTiktok className="text-xl" />
+              </Link>
+            </div>
           </div>
         </motion.div>
       )}
     </nav>
   )
 }
-
