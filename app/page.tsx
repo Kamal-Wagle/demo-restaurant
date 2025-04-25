@@ -243,29 +243,56 @@ export default function Home() {
             whileInView="animate"
             viewport={{ once: true }}
           >
-            {[
-              { title: "Elegant Dining Room", image: "/placeholder.svg?height=400&width=600" },
-              { title: "Cozy Bar Area", image: "/placeholder.svg?height=400&width=600" },
-              { title: "Chef's Table Experience", image: "/placeholder.svg?height=400&width=600" },
-              { title: "Outdoor Terrace", image: "/placeholder.svg?height=400&width=600" },
-              { title: "Private Event Space", image: "/placeholder.svg?height=400&width=600" },
-              { title: "Open Kitchen", image: "/placeholder.svg?height=400&width=600" },
-            ].map((item, index) => (
-              <motion.div key={index} className="relative group" variants={fadeIn}>
-                <Image
-                  src={item.image || "/placeholder.svg"}
-                  alt={item.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-64 object-cover rounded-lg shadow-md"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <Camera className="w-8 h-8 mb-2 mx-auto" />
-                    <h3 className="text-xl font-semibold">{item.title}</h3>
-                  </div>
-                </div>
-              </motion.div>
+           {[
+  {
+    title: "Elegant Dining Room",
+    image:
+      "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    title: "Cozy Bar Area",
+    image:
+      "https://images.unsplash.com/photo-1588854337114-8d4fc1b4d6a6?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    title: "Chef's Table Experience",
+    image:
+      "https://images.unsplash.com/photo-1631515243345-74a4dbdb1d3b?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    title: "Outdoor Terrace",
+    image:
+      "https://images.unsplash.com/photo-1627398242454-f727d96a79f1?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    title: "Private Event Space",
+    image:
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    title: "Open Kitchen",
+    image:
+      "https://images.unsplash.com/photo-1625946666780-e3c0b314b04a?auto=format&fit=crop&w=600&q=80",
+  },
+].map((item, index) => (
+  <motion.div key={index} className="relative group" variants={fadeIn}>
+    <Image
+      src={item.image}
+      alt={item.title}
+      width={600}
+      height={400}
+      className="w-full h-64 object-cover rounded-lg shadow-md"
+    />
+    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
+      <div className="text-white text-center">
+        <Camera className="w-8 h-8 mb-2 mx-auto" />
+        <h3 className="text-xl font-semibold">{item.title}</h3>
+      </div>
+    </div>
+  </motion.div>
+))}
+
+            
             ))}
           </motion.div>
         </div>
