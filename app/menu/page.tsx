@@ -48,7 +48,7 @@ const menuItems = [
     price: "$14",
     description: "Crispy risotto balls with black truffle and mozzarella",
     category: "starters",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1729875749099-8629b504fbd3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q3Jpc3B5JTIwcmlzb3R0byUyMGJhbGxzJTIwd2l0aCUyMGJsYWNrJTIwdHJ1ZmZsZSUyMGFuZCUyMG1venphcmVsbGF8ZW58MHx8MHx8fDA%3D",
     dietary: ["vegetarian"],
   },
   {
@@ -57,7 +57,7 @@ const menuItems = [
     price: "$16",
     description: "Fresh tuna with avocado, citrus, and wasabi aioli",
     category: "starters",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1656106577512-0259bf5b9fd6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VHVuYSUyMFRhcnRhcmV8ZW58MHx8MHx8fDA%3D",
     dietary: ["gluten-free"],
   },
   {
@@ -66,7 +66,7 @@ const menuItems = [
     price: "$12",
     description: "With goat cheese, walnuts, and balsamic reduction",
     category: "starters",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1722032617357-7b09276b1a8d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Um9hc3RlZCUyMEJlZXQlMjBTYWxhZHxlbnwwfHwwfHx8MA%3D%3D",
     dietary: ["vegetarian", "gluten-free"],
   },
   {
@@ -75,7 +75,7 @@ const menuItems = [
     price: "$42",
     description: "8oz tenderloin with truffle mashed potatoes and asparagus",
     category: "mains",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://plus.unsplash.com/premium_photo-1661677253638-ed2538328c63?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dietary: [],
   },
   {
@@ -84,7 +84,7 @@ const menuItems = [
     price: "$36",
     description: "With saffron risotto and lemon beurre blanc",
     category: "mains",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1674066269398-56d6ce9eeadd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UGFuJTIwU2VhcmVkJTIwU2VhJTIwQmFzcyUyMGRpc2h8ZW58MHx8MHx8fDA%3D",
     dietary: ["gluten-free"],
   },
   {
@@ -93,7 +93,7 @@ const menuItems = [
     price: "$28",
     description: "House-made pasta with wild mushrooms and sage brown butter",
     category: "mains",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1617237692625-36ecc1173a4d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TXVzaHJvb20lMjBSYXZpb2xpJTIwZGlzaHxlbnwwfHwwfHx8MA%3D%3D",
     dietary: ["vegetarian"],
   },
   {
@@ -102,7 +102,7 @@ const menuItems = [
     price: "$12",
     description: "With vanilla ice cream and raspberry coulis",
     category: "desserts",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1602683504046-cf7e90664396?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dietary: ["vegetarian"],
   },
   {
@@ -111,7 +111,7 @@ const menuItems = [
     price: "$10",
     description: "Classic vanilla bean custard with caramelized sugar",
     category: "desserts",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://plus.unsplash.com/premium_photo-1695028377773-e3673040f2cc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q3IlQzMlQThtZSUyMEJyJUMzJUJCbCVDMyVBOWUlMjBkaXNofGVufDB8fDB8fHww",
     dietary: ["vegetarian", "gluten-free"],
   },
   {
@@ -120,7 +120,7 @@ const menuItems = [
     price: "$14",
     description: "Gin, vermouth, and a twist of lemon",
     category: "drinks",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://plus.unsplash.com/premium_photo-1661344279503-4b57b0fa1560?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U2lnbmF0dXJlJTIwTWFydGluaSUyMGRpc2h8ZW58MHx8MHx8fDA%3D",
     dietary: ["vegan", "gluten-free"],
   },
   {
@@ -129,7 +129,7 @@ const menuItems = [
     price: "$5",
     description: "Locally roasted, served with house-made biscotti",
     category: "drinks",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1655971357254-be32cee6d19f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8QXJ0aXNhbmFsJTIwQ29mZmVlJTIwZHJpbmtzfGVufDB8fDB8fHww",
     dietary: ["vegan"],
   },
 ]
