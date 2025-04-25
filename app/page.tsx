@@ -252,17 +252,17 @@ export default function Home() {
   {
     title: "Cozy Bar Area",
     image:
-      "https://images.unsplash.com/photo-1588854337114-8d4fc1b4d6a6?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1680546614547-3011f3200b41?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Chef's Table Experience",
     image:
-      "https://images.unsplash.com/photo-1631515243345-74a4dbdb1d3b?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1552326399-9109c86379ae?q=80&w=1166&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Outdoor Terrace",
     image:
-      "https://images.unsplash.com/photo-1627398242454-f727d96a79f1?auto=format&fit=crop&w=600&q=80",
+      "https://plus.unsplash.com/premium_photo-1661775130884-4ac28ec07105?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Private Event Space",
@@ -272,7 +272,7 @@ export default function Home() {
   {
     title: "Open Kitchen",
     image:
-      "https://images.unsplash.com/photo-1625946666780-e3c0b314b04a?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1708915965975-2a950db0e215?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ].map((item, index) => (
   <motion.div key={index} className="relative group" variants={fadeIn}>
