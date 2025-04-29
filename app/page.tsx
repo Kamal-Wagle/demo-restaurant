@@ -190,7 +190,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             {[
-              { name: "Truffle Risotto", price: "$ 28.99", image: "/placeholder.svg?height=300&width=400" },
+              { name: "Truffle Risotto", price: "$ 28.99", image: "https://images.unsplash.com/photo-1729875749099-8629b504fbd3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q3Jpc3B5JTIwcmlzb3R0byUyMGJhbGxzJTIwd2l0aCUyMGJsYWNrJTIwdHJ1ZmZsZSUyMGFuZCUyMG1venphcmVsbGF8ZW58MHx8MHx8fDA%3D" },
               { name: "Seared Scallops", price: "$ 32.99", image: "/placeholder.svg?height=300&width=400" },
               { name: "Wagyu Steak", price: "$ 45.99", image: "/placeholder.svg?height=300&width=400" },
             ].map((dish, index) => (
