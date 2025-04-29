@@ -191,8 +191,8 @@ export default function Home() {
           >
             {[
               { name: "Truffle Risotto", price: "$ 28.99", image: "https://images.unsplash.com/photo-1729875749099-8629b504fbd3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q3Jpc3B5JTIwcmlzb3R0byUyMGJhbGxzJTIwd2l0aCUyMGJsYWNrJTIwdHJ1ZmZsZSUyMGFuZCUyMG1venphcmVsbGF8ZW58MHx8MHx8fDA%3D" },
-              { name: "Seared Scallops", price: "$ 32.99", image: "/placeholder.svg?height=300&width=400" },
-              { name: "Wagyu Steak", price: "$ 45.99", image: "/placeholder.svg?height=300&width=400" },
+              { name: "Seared Scallops", price: "$ 32.99", image: "https://images.unsplash.com/photo-1656106577512-0259bf5b9fd6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VHVuYSUyMFRhcnRhcmV8ZW58MHx8MHx8fDA%3D" },
+              { name: "Wagyu Steak", price: "$ 45.99", image: "https://images.unsplash.com/photo-1722032617357-7b09276b1a8d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Um9hc3RlZCUyMEJlZXQlMjBTYWxhZHxlbnwwfHwwfHx8MA%3D%3D" },
             ].map((dish, index) => (
               <motion.div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden" variants={fadeIn}>
                 <Image
